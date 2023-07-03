@@ -1,0 +1,53 @@
+Installation Camel-k
+
+kamel install --registry chubbio.azurecr.io --registry-insecure true --organization chubbio --registry-auth-username chubbio --registry-auth-password 69Jdhf2VkLhA/QUF7jNFsouNvW4p48y3 --base-image chubbio.azurecr.io/chubbio/openjdk11:slim -n camelk
+
+Where --base-image chubbio.azurecr.io/chubbio/openjdk11:slim is the jdk base image which was push to azure container registry
+
+
+Custom Resouce Definition and other resources after camel k successfull installation
+
+$ kubectl get customresourcedefinitions.apiextensions.k8s.io |grep -i camel
+builds.camel.apache.org                               2021-12-01T10:12:09Z
+camelcatalogs.camel.apache.org                        2021-12-01T10:12:08Z
+integrationkits.camel.apache.org                      2021-12-01T10:12:08Z
+integrationplatforms.camel.apache.org                 2021-12-01T10:12:07Z
+integrations.camel.apache.org                         2021-12-01T10:12:08Z
+kameletbindings.camel.apache.org                      2021-12-01T10:12:09Z
+kamelets.camel.apache.org                             2021-12-01T10:12:09Z
+
+
+AJBISHT@nausp-evdiE3318 MINGW64 ~/kamel
+$ kubectl get pods
+NAME                                READY   STATUS    RESTARTS   AGE
+camel-k-operator-688b85ff7d-nnpnk   1/1     Running   0          4h15m
+
+AJBISHT@nausp-evdiE3318 MINGW64 ~/kamel
+$
+kubec
+AJBISHT@nausp-evdiE3318 MINGW64 ~/kamel
+$ kubectl get configmap
+NAME                     DATA   AGE
+camel-k-maven-settings   1      4h14m
+kube-root-ca.crt         1      17d
+
+
+
+$ kubectl get secrets
+NAME                           TYPE                                  DATA   AGE
+camel-k-operator-token-ttxzq   kubernetes.io/service-account-token   3      4h15m
+camel-k-registry-secret        kubernetes.io/dockerconfigjson        1      4h15m
+camelk-secret                  kubernetes.io/dockerconfigjson        1      15d
+default-token-mvtpr            kubernetes.io/service-account-token   3      17d
+
+
+$ kubectl get integrationplatforms
+NAME      PHASE
+camel-k   Ready
+
+AJBISHT@nausp-evdiE3318 MINGW64 ~/kamel
+$ kubectl get builds.camel.apache.org
+NAME                       PHASE       AGE   STARTED   DURATION          ATTEMPTS
+kit-c6jnqlnjm5vpcoh6e9u0   Succeeded   40m   40m       5m20.927593606s
+kit-c6jnuunjm5vpcoh6e9v0   Succeeded   31m   31m       5m20.182624016s
+

@@ -1,0 +1,317 @@
+{"level":"info","ts":1638370441.895139,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370441.8952026,"logger":"camel-k.controller.integration","msg":"Invoking action platform-setup","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370441.8958652,"logger":"camel-k.trait","msg":"Apply trait: platform"}
+{"level":"info","ts":1638370441.895948,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370441.9012406,"logger":"camel-k.trait","msg":"Apply trait: dependencies"}
+{"level":"info","ts":1638370441.9027317,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370441.9053302,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370441.9053602,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370441.9053705,"logger":"camel-k.trait","msg":"Apply trait: owner"}
+{"level":"info","ts":1638370441.9070396,"logger":"camel-k","msg":"could not find any knative type in namespace camelk, last error was: services.serving.knative.dev is forbidden: User \"system:serviceaccount:camelk:camel-k-operator\" cannot list resource \"services\" in API group \"serving.knative.dev\" in the namespace \"camelk\""}
+{"level":"info","ts":1638370441.9211502,"logger":"camel-k.controller.integration","msg":"state transition","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample","phase-from":"","phase-to":"Initialization"}
+{"level":"info","ts":1638370441.92126,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370441.921311,"logger":"camel-k.controller.integration","msg":"Invoking action initialize","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370441.922148,"logger":"camel-k.trait","msg":"Apply trait: init"}
+{"level":"info","ts":1638370441.922161,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370441.9239357,"logger":"camel-k.trait","msg":"Apply trait: dependencies"}
+{"level":"info","ts":1638370441.9251776,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370441.9272773,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370441.9273424,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370441.927424,"logger":"camel-k.trait","msg":"Apply trait: owner"}
+{"level":"info","ts":1638370441.935935,"logger":"camel-k.controller.integration","msg":"state transition","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample","phase-from":"Initialization","phase-to":"Building Kit"}
+{"level":"info","ts":1638370441.9361072,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370441.9361465,"logger":"camel-k.controller.integration","msg":"Invoking action build-kit","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370441.9363973,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370441.9385817,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370441.9402087,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370441.9559808,"logger":"camel-k.controller.integrationkit","msg":"Reconciling IntegrationKit","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370441.981948,"logger":"camel-k.controller.integrationkit","msg":"Reconciling IntegrationKit","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370441.982045,"logger":"camel-k.controller.integrationkit","msg":"Invoking action initialize","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"IntegrationKit","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370441.9823358,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370442.0026877,"logger":"camel-k.controller.integrationkit","msg":"state transition","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"IntegrationKit","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g","phase-from":"Initialization","phase-to":"Build Submitted"}
+{"level":"info","ts":1638370442.003021,"logger":"camel-k.controller.integrationkit","msg":"Reconciling IntegrationKit","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.0030594,"logger":"camel-k.controller.integrationkit","msg":"Invoking action build","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"IntegrationKit","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.0036602,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370442.0091038,"logger":"camel-k.trait","msg":"Apply trait: builder"}
+{"level":"info","ts":1638370442.0092897,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370442.0204246,"logger":"camel-k.controller.build","msg":"Reconciling Build","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.0232072,"logger":"camel-k.controller.build","msg":"Invoking action initialize","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"Build","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.0231264,"logger":"camel-k.controller.integrationkit","msg":"Reconciling IntegrationKit","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.025534,"logger":"camel-k.controller.integrationkit","msg":"Invoking action build","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"IntegrationKit","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.0378144,"logger":"camel-k.controller.build","msg":"state transition","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"Build","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g","phase-from":"","phase-to":"Scheduling"}
+{"level":"info","ts":1638370442.0380874,"logger":"camel-k.controller.integrationkit","msg":"Reconciling IntegrationKit","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.0432246,"logger":"camel-k.controller.integrationkit","msg":"Invoking action build","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"IntegrationKit","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.0465748,"logger":"camel-k.controller.build","msg":"Reconciling Build","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.0493793,"logger":"camel-k.controller.build","msg":"Invoking action schedule","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"Build","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.0638146,"logger":"camel-k.controller.build","msg":"state transition","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"Build","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g","phase-from":"Scheduling","phase-to":"Pending"}
+{"level":"info","ts":1638370442.068209,"logger":"camel-k.controller.integrationkit","msg":"Reconciling IntegrationKit","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.0682757,"logger":"camel-k.controller.integrationkit","msg":"Invoking action build","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"IntegrationKit","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.0683293,"logger":"camel-k.controller.build","msg":"Reconciling Build","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.0683692,"logger":"camel-k.controller.build","msg":"Invoking action monitor-routine","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"Build","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.0962818,"logger":"camel-k.controller.integrationkit","msg":"Reconciling IntegrationKit","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.0967743,"logger":"camel-k.controller.integrationkit","msg":"Invoking action build","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"IntegrationKit","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.1075377,"logger":"camel-k.controller.build","msg":"state transition","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"Build","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g","phase-from":"Pending","phase-to":"Running"}
+{"level":"info","ts":1638370442.1080317,"logger":"camel-k.controller.integrationkit","msg":"state transition","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"IntegrationKit","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g","phase-from":"Build Submitted","phase-to":"Build Running"}
+{"level":"info","ts":1638370442.1081107,"logger":"camel-k.controller.integrationkit","msg":"Reconciling IntegrationKit","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.108145,"logger":"camel-k.controller.integrationkit","msg":"Invoking action build","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"IntegrationKit","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.1081686,"logger":"camel-k.controller.integrationkit","msg":"Build running","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"IntegrationKit","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.1082122,"logger":"camel-k.controller.build","msg":"Reconciling Build","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370442.1084511,"logger":"camel-k.builder","msg":"steps: [github.com/apache/camel-k/pkg/builder/LoadCamelQuarkusCatalog@0 github.com/apache/camel-k/pkg/builder/CleanUpBuildDir@9 github.com/apache/camel-k/pkg/builder/GenerateJavaKeystore@10 github.com/apache/camel-k/pkg/builder/GenerateQuarkusProject@10 github.com/apache/camel-k/pkg/builder/GenerateProjectSettings@11 github.com/apache/camel-k/pkg/builder/InjectDependencies@12 github.com/apache/camel-k/pkg/builder/SanitizeDependencies@13 github.com/apache/camel-k/pkg/builder/BuildQuarkusRunner@20 github.com/apache/camel-k/pkg/builder/ComputeQuarkusDependencies@21 github.com/apache/camel-k/pkg/builder/IncrementalImageContext@30]"}
+{"level":"info","ts":1638370442.108489,"logger":"camel-k.builder","msg":"executing step","step":"github.com/apache/camel-k/pkg/builder/LoadCamelQuarkusCatalog","phase":"0","task":"builder"}
+{"level":"info","ts":1638370442.1096592,"logger":"camel-k.builder","msg":"step done in 0.001159 seconds","step":"github.com/apache/camel-k/pkg/builder/LoadCamelQuarkusCatalog","phase":"0","task":"builder"}
+{"level":"info","ts":1638370442.1096807,"logger":"camel-k.builder","msg":"executing step","step":"github.com/apache/camel-k/pkg/builder/CleanUpBuildDir","phase":"9","task":"builder"}
+{"level":"info","ts":1638370442.1097913,"logger":"camel-k.builder","msg":"step done in 0.000104 seconds","step":"github.com/apache/camel-k/pkg/builder/CleanUpBuildDir","phase":"9","task":"builder"}
+{"level":"info","ts":1638370442.1098044,"logger":"camel-k.builder","msg":"executing step","step":"github.com/apache/camel-k/pkg/builder/GenerateJavaKeystore","phase":"10","task":"builder"}
+{"level":"info","ts":1638370442.109809,"logger":"camel-k.builder","msg":"step done in 0.000000 seconds","step":"github.com/apache/camel-k/pkg/builder/GenerateJavaKeystore","phase":"10","task":"builder"}
+{"level":"info","ts":1638370442.1098137,"logger":"camel-k.builder","msg":"executing step","step":"github.com/apache/camel-k/pkg/builder/GenerateQuarkusProject","phase":"10","task":"builder"}
+{"level":"info","ts":1638370442.1098282,"logger":"camel-k.builder","msg":"step done in 0.000011 seconds","step":"github.com/apache/camel-k/pkg/builder/GenerateQuarkusProject","phase":"10","task":"builder"}
+{"level":"info","ts":1638370442.1098351,"logger":"camel-k.builder","msg":"executing step","step":"github.com/apache/camel-k/pkg/builder/GenerateProjectSettings","phase":"11","task":"builder"}
+{"level":"info","ts":1638370442.1098533,"logger":"camel-k.builder","msg":"step done in 0.000014 seconds","step":"github.com/apache/camel-k/pkg/builder/GenerateProjectSettings","phase":"11","task":"builder"}
+{"level":"info","ts":1638370442.1098604,"logger":"camel-k.builder","msg":"executing step","step":"github.com/apache/camel-k/pkg/builder/InjectDependencies","phase":"12","task":"builder"}
+{"level":"info","ts":1638370442.1099298,"logger":"camel-k.builder","msg":"step done in 0.000066 seconds","step":"github.com/apache/camel-k/pkg/builder/InjectDependencies","phase":"12","task":"builder"}
+{"level":"info","ts":1638370442.1099405,"logger":"camel-k.builder","msg":"executing step","step":"github.com/apache/camel-k/pkg/builder/SanitizeDependencies","phase":"13","task":"builder"}
+{"level":"info","ts":1638370442.1099484,"logger":"camel-k.builder","msg":"step done in 0.000001 seconds","step":"github.com/apache/camel-k/pkg/builder/SanitizeDependencies","phase":"13","task":"builder"}
+{"level":"info","ts":1638370442.109953,"logger":"camel-k.builder","msg":"executing step","step":"github.com/apache/camel-k/pkg/builder/BuildQuarkusRunner","phase":"20","task":"builder"}
+{"level":"info","ts":1638370442.110327,"logger":"camel-k.maven","msg":"executing: mvn --no-transfer-progress -Dstyle.color=never -Dmaven.repo.local=/tmp/artifacts/m2 --settings /tmp/kit-c6jop2fjm5vpcoh6ea0g-282120229/maven/settings.xml package","MAVEN_OPTS":""}
+{"level":"info","ts":1638370442.1105072,"logger":"camel-k.controller.build","msg":"Invoking action monitor-routine","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"Build","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370443.821244,"logger":"camel-k.maven.build","msg":"Scanning for projects..."}
+{"level":"info","ts":1638370444.1440113,"logger":"camel-k.maven.build","msg":""}
+{"level":"info","ts":1638370444.1494927,"logger":"camel-k.maven.build","msg":"---------< org.apache.camel.k.integration:camel-k-integration >---------"}
+{"level":"info","ts":1638370444.1507251,"logger":"camel-k.maven.build","msg":"Building camel-k-integration 1.7.0"}
+{"level":"info","ts":1638370444.1507435,"logger":"camel-k.maven.build","msg":"--------------------------------[ jar ]---------------------------------"}
+{"level":"info","ts":1638370445.144873,"logger":"camel-k.maven.build","msg":""}
+{"level":"info","ts":1638370445.148407,"logger":"camel-k.maven.build","msg":"--- maven-resources-plugin:2.6:resources (default-resources) @ camel-k-integration ---"}
+{"level":"info","ts":1638370445.3056934,"logger":"camel-k.maven.build","msg":"Using 'UTF-8' encoding to copy filtered resources."}
+{"level":"info","ts":1638370445.3121774,"logger":"camel-k.maven.build","msg":"Copying 1 resource"}
+{"level":"info","ts":1638370445.3199716,"logger":"camel-k.maven.build","msg":""}
+{"level":"info","ts":1638370445.3205612,"logger":"camel-k.maven.build","msg":"--- maven-compiler-plugin:3.1:compile (default-compile) @ camel-k-integration ---"}
+{"level":"info","ts":1638370445.6074398,"logger":"camel-k.maven.build","msg":"No sources to compile"}
+{"level":"info","ts":1638370445.6074808,"logger":"camel-k.maven.build","msg":""}
+{"level":"info","ts":1638370445.6074924,"logger":"camel-k.maven.build","msg":"--- maven-resources-plugin:2.6:testResources (default-testResources) @ camel-k-integration ---"}
+{"level":"info","ts":1638370445.6130853,"logger":"camel-k.maven.build","msg":"Using 'UTF-8' encoding to copy filtered resources."}
+{"level":"info","ts":1638370445.613593,"logger":"camel-k.maven.build","msg":"skip non existing resourceDirectory /tmp/kit-c6jop2fjm5vpcoh6ea0g-282120229/maven/src/test/resources"}
+{"level":"info","ts":1638370445.6157808,"logger":"camel-k.maven.build","msg":""}
+{"level":"info","ts":1638370445.6161098,"logger":"camel-k.maven.build","msg":"--- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ camel-k-integration ---"}
+{"level":"info","ts":1638370445.6263988,"logger":"camel-k.maven.build","msg":"No sources to compile"}
+{"level":"info","ts":1638370445.6359909,"logger":"camel-k.maven.build","msg":""}
+{"level":"info","ts":1638370445.6404922,"logger":"camel-k.maven.build","msg":"--- maven-surefire-plugin:2.12.4:test (default-test) @ camel-k-integration ---"}
+{"level":"info","ts":1638370445.7493763,"logger":"camel-k.maven.build","msg":"No tests to run."}
+{"level":"info","ts":1638370445.7601073,"logger":"camel-k.maven.build","msg":""}
+{"level":"info","ts":1638370445.7625928,"logger":"camel-k.maven.build","msg":"--- maven-jar-plugin:2.4:jar (default-jar) @ camel-k-integration ---"}
+{"level":"info","ts":1638370445.9381616,"logger":"camel-k.maven.build","msg":"Building jar: /tmp/kit-c6jop2fjm5vpcoh6ea0g-282120229/maven/target/camel-k-integration-1.7.0.jar"}
+{"level":"info","ts":1638370445.958075,"logger":"camel-k.maven.build","msg":""}
+{"level":"info","ts":1638370445.9608989,"logger":"camel-k.maven.build","msg":"--- quarkus-maven-plugin:2.4.0.Final:build (default) @ camel-k-integration ---"}
+{"level":"info","ts":1638370447.0438144,"logger":"camel-k.controller.build","msg":"Reconciling Build","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370447.0441341,"logger":"camel-k.controller.build","msg":"Invoking action monitor-routine","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"Build","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370447.6259282,"logger":"camel-k.maven.build","msg":"[org.jboss.threads] JBoss Threads version 3.4.2.Final"}
+{"level":"info","ts":1638370449.0549843,"logger":"camel-k.maven.build","msg":"[io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 2150ms"}
+{"level":"info","ts":1638370449.0712283,"logger":"camel-k.maven.build","msg":"------------------------------------------------------------------------"}
+{"level":"info","ts":1638370449.073992,"logger":"camel-k.maven.build","msg":"BUILD SUCCESS"}
+{"level":"info","ts":1638370449.0746305,"logger":"camel-k.maven.build","msg":"------------------------------------------------------------------------"}
+{"level":"info","ts":1638370449.0798113,"logger":"camel-k.maven.build","msg":"Total time:  5.286 s"}
+{"level":"info","ts":1638370449.0811586,"logger":"camel-k.maven.build","msg":"Finished at: 2021-12-01T14:54:09Z"}
+{"level":"info","ts":1638370449.0817115,"logger":"camel-k.maven.build","msg":"------------------------------------------------------------------------"}
+{"level":"info","ts":1638370449.1169634,"logger":"camel-k.builder","msg":"step done in 7.006997 seconds","step":"github.com/apache/camel-k/pkg/builder/BuildQuarkusRunner","phase":"20","task":"builder"}
+{"level":"info","ts":1638370449.1170304,"logger":"camel-k.builder","msg":"executing step","step":"github.com/apache/camel-k/pkg/builder/ComputeQuarkusDependencies","phase":"21","task":"builder"}
+{"level":"info","ts":1638370449.1408467,"logger":"camel-k.builder","msg":"step done in 0.023784 seconds","step":"github.com/apache/camel-k/pkg/builder/ComputeQuarkusDependencies","phase":"21","task":"builder"}
+{"level":"info","ts":1638370449.1408818,"logger":"camel-k.builder","msg":"executing step","step":"github.com/apache/camel-k/pkg/builder/IncrementalImageContext","phase":"30","task":"builder"}
+{"level":"info","ts":1638370449.1649284,"logger":"camel-k.builder","msg":"step done in 0.024005 seconds","step":"github.com/apache/camel-k/pkg/builder/IncrementalImageContext","phase":"30","task":"builder"}
+{"level":"info","ts":1638370449.164967,"logger":"camel-k.builder","msg":"dependencies: [camel:timer mvn:org.apache.camel.k:camel-k-runtime mvn:org.apache.camel.quarkus:camel-quarkus-java-joor-dsl]"}
+{"level":"info","ts":1638370449.165033,"logger":"camel-k.builder","msg":"artifacts: [camel-k-integration-1.7.0.jar io.quarkus.quarkus-bootstrap-runner-2.4.0.Final.jar io.quarkus.quarkus-development-mode-spi-2.4.0.Final.jar io.smallrye.common.smallrye-common-io-1.6.0.jar org.glassfish.jakarta.json-1.1.6.jar org.graalvm.sdk.graal-sdk-21.2.0.jar org.jboss.logging.jboss-logging-3.4.2.Final.jar org.jboss.logmanager.jboss-logmanager-embedded-1.0.9.jar org.wildfly.common.wildfly-common-1.5.4.Final-format-001.jar io.quarkus.arc.arc-2.4.0.Final.jar io.quarkus.quarkus-arc-2.4.0.Final.jar io.quarkus.quarkus-core-2.4.0.Final.jar io.quarkus.quarkus-jsonp-2.4.0.Final.jar io.quarkus.quarkus-logging-json-2.4.0.Final.jar io.smallrye.common.smallrye-common-annotation-1.6.0.jar io.smallrye.common.smallrye-common-classloader-1.6.0.jar io.smallrye.common.smallrye-common-constraint-1.6.0.jar io.smallrye.common.smallrye-common-expression-1.6.0.jar io.smallrye.common.smallrye-common-function-1.6.0.jar io.smallrye.config.smallrye-config-2.5.1.jar io.smallrye.config.smallrye-config-common-2.5.1.jar io.smallrye.config.smallrye-config-core-2.5.1.jar jakarta.annotation.jakarta.annotation-api-1.3.5.jar jakarta.el.jakarta.el-api-3.0.3.jar jakarta.enterprise.jakarta.enterprise.cdi-api-2.0.2.jar jakarta.inject.jakarta.inject-api-1.0.jar jakarta.interceptor.jakarta.interceptor-api-1.2.5.jar jakarta.transaction.jakarta.transaction-api-1.3.3.jar org.apache.camel.camel-api-3.12.0.jar org.apache.camel.camel-base-3.12.0.jar org.apache.camel.camel-base-engine-3.12.0.jar org.apache.camel.camel-bean-3.12.0.jar org.apache.camel.camel-componentdsl-3.12.0.jar org.apache.camel.camel-core-catalog-3.12.0.jar org.apache.camel.camel-core-engine-3.12.0.jar org.apache.camel.camel-core-languages-3.12.0.jar org.apache.camel.camel-core-model-3.12.0.jar org.apache.camel.camel-core-processor-3.12.0.jar org.apache.camel.camel-core-reifier-3.12.0.jar org.apache.camel.camel-dsl-support-3.12.0.jar org.apache.camel.camel-endpointdsl-3.12.0.jar org.apache.camel.camel-java-joor-dsl-3.12.0.jar org.apache.camel.camel-main-3.12.0.jar org.apache.camel.camel-management-api-3.12.0.jar org.apache.camel.camel-microprofile-config-3.12.0.jar org.apache.camel.camel-support-3.12.0.jar org.apache.camel.camel-timer-3.12.0.jar org.apache.camel.camel-tooling-model-3.12.0.jar org.apache.camel.camel-util-3.12.0.jar org.apache.camel.camel-util-json-3.12.0.jar org.apache.camel.k.camel-k-core-1.10.0.jar org.apache.camel.k.camel-k-core-api-1.10.0.jar org.apache.camel.k.camel-k-core-support-1.10.0.jar org.apache.camel.k.camel-k-runtime-1.10.0.jar org.apache.camel.quarkus.camel-quarkus-bean-2.4.0.jar org.apache.camel.quarkus.camel-quarkus-core-2.4.0.jar org.apache.camel.quarkus.camel-quarkus-java-joor-dsl-2.4.0.jar org.apache.camel.quarkus.camel-quarkus-support-common-2.4.0.jar org.apache.camel.quarkus.camel-quarkus-timer-2.4.0.jar org.eclipse.microprofile.config.microprofile-config-api-2.0.jar org.eclipse.microprofile.context-propagation.microprofile-context-propagation-api-1.2.jar org.jboss.logging.jboss-logging-annotations-2.2.1.Final.jar org.jboss.slf4j.slf4j-jboss-logmanager-1.1.0.Final.jar org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec-2.0.0.Final.jar org.jboss.threads.jboss-threads-3.4.2.Final.jar org.jooq.joor-0.9.14.jar org.slf4j.slf4j-api-1.7.30.jar generated-bytecode.jar quarkus-application.dat quarkus-app-dependencies.txt quarkus-run.jar]"}
+{"level":"info","ts":1638370449.1651103,"logger":"camel-k.builder","msg":"artifacts selected: [camel-k-integration-1.7.0.jar io.quarkus.quarkus-bootstrap-runner-2.4.0.Final.jar io.quarkus.quarkus-development-mode-spi-2.4.0.Final.jar io.smallrye.common.smallrye-common-io-1.6.0.jar org.glassfish.jakarta.json-1.1.6.jar org.graalvm.sdk.graal-sdk-21.2.0.jar org.jboss.logging.jboss-logging-3.4.2.Final.jar org.jboss.logmanager.jboss-logmanager-embedded-1.0.9.jar org.wildfly.common.wildfly-common-1.5.4.Final-format-001.jar io.quarkus.arc.arc-2.4.0.Final.jar io.quarkus.quarkus-arc-2.4.0.Final.jar io.quarkus.quarkus-core-2.4.0.Final.jar io.quarkus.quarkus-jsonp-2.4.0.Final.jar io.quarkus.quarkus-logging-json-2.4.0.Final.jar io.smallrye.common.smallrye-common-annotation-1.6.0.jar io.smallrye.common.smallrye-common-classloader-1.6.0.jar io.smallrye.common.smallrye-common-constraint-1.6.0.jar io.smallrye.common.smallrye-common-expression-1.6.0.jar io.smallrye.common.smallrye-common-function-1.6.0.jar io.smallrye.config.smallrye-config-2.5.1.jar io.smallrye.config.smallrye-config-common-2.5.1.jar io.smallrye.config.smallrye-config-core-2.5.1.jar jakarta.annotation.jakarta.annotation-api-1.3.5.jar jakarta.el.jakarta.el-api-3.0.3.jar jakarta.enterprise.jakarta.enterprise.cdi-api-2.0.2.jar jakarta.inject.jakarta.inject-api-1.0.jar jakarta.interceptor.jakarta.interceptor-api-1.2.5.jar jakarta.transaction.jakarta.transaction-api-1.3.3.jar org.apache.camel.camel-api-3.12.0.jar org.apache.camel.camel-base-3.12.0.jar org.apache.camel.camel-base-engine-3.12.0.jar org.apache.camel.camel-bean-3.12.0.jar org.apache.camel.camel-componentdsl-3.12.0.jar org.apache.camel.camel-core-catalog-3.12.0.jar org.apache.camel.camel-core-engine-3.12.0.jar org.apache.camel.camel-core-languages-3.12.0.jar org.apache.camel.camel-core-model-3.12.0.jar org.apache.camel.camel-core-processor-3.12.0.jar org.apache.camel.camel-core-reifier-3.12.0.jar org.apache.camel.camel-dsl-support-3.12.0.jar org.apache.camel.camel-endpointdsl-3.12.0.jar org.apache.camel.camel-java-joor-dsl-3.12.0.jar org.apache.camel.camel-main-3.12.0.jar org.apache.camel.camel-management-api-3.12.0.jar org.apache.camel.camel-microprofile-config-3.12.0.jar org.apache.camel.camel-support-3.12.0.jar org.apache.camel.camel-timer-3.12.0.jar org.apache.camel.camel-tooling-model-3.12.0.jar org.apache.camel.camel-util-3.12.0.jar org.apache.camel.camel-util-json-3.12.0.jar org.apache.camel.k.camel-k-core-1.10.0.jar org.apache.camel.k.camel-k-core-api-1.10.0.jar org.apache.camel.k.camel-k-core-support-1.10.0.jar org.apache.camel.k.camel-k-runtime-1.10.0.jar org.apache.camel.quarkus.camel-quarkus-bean-2.4.0.jar org.apache.camel.quarkus.camel-quarkus-core-2.4.0.jar org.apache.camel.quarkus.camel-quarkus-java-joor-dsl-2.4.0.jar org.apache.camel.quarkus.camel-quarkus-support-common-2.4.0.jar org.apache.camel.quarkus.camel-quarkus-timer-2.4.0.jar org.eclipse.microprofile.config.microprofile-config-api-2.0.jar org.eclipse.microprofile.context-propagation.microprofile-context-propagation-api-1.2.jar org.jboss.logging.jboss-logging-annotations-2.2.1.Final.jar org.jboss.slf4j.slf4j-jboss-logmanager-1.1.0.Final.jar org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec-2.0.0.Final.jar org.jboss.threads.jboss-threads-3.4.2.Final.jar org.jooq.joor-0.9.14.jar org.slf4j.slf4j-api-1.7.30.jar generated-bytecode.jar quarkus-application.dat quarkus-app-dependencies.txt quarkus-run.jar]"}
+{"level":"info","ts":1638370449.165156,"logger":"camel-k.builder","msg":"base image: chubbio.azurecr.io/chubbio/openjdk11:slim"}
+{"level":"info","ts":1638370449.1651657,"logger":"camel-k.builder","msg":"resolved base image: chubbio.azurecr.io/chubbio/openjdk11:slim"}
+{"level":"info","ts":1638370449.1944487,"logger":"camel-k","msg":"spectrum - 2021/12/01 14:54:09 Pulling base image chubbio.azurecr.io/chubbio/openjdk11:slim (insecure=true)..."}
+{"level":"info","ts":1638370604.078018,"logger":"camel-k","msg":"spectrum - 2021/12/01 14:56:44 Composing layers..."}
+{"level":"info","ts":1638370604.314735,"logger":"camel-k","msg":"spectrum - 2021/12/01 14:56:44 Pushing image chubbio.azurecr.io/chubbio/camel-k-kit-c6jop2fjm5vpcoh6ea0g:21311584 (insecure=true)..."}
+
+{"level":"info","ts":1638370759.5915272,"logger":"camel-k","msg":"spectrum - 2021/12/01 14:59:19 mounted blob: sha256:09257aa5acac3a1946a71c0d67033810119b243e6196b9c5b7e9f9b95f4f14a7"}
+{"level":"info","ts":1638370759.6092396,"logger":"camel-k","msg":"spectrum - 2021/12/01 14:59:19 mounted blob: sha256:1002e62af3872b389ebb953b469d85ffe9d56cd556562013734f95c409667310"}
+{"level":"info","ts":1638370759.706665,"logger":"camel-k","msg":"spectrum - 2021/12/01 14:59:19 mounted blob: sha256:f92504c4db63b2cf8f29fb87337ad0e73e2a0a7212b169641dc6d1f6bb6e8bd0"}
+{"level":"info","ts":1638370759.719443,"logger":"camel-k","msg":"spectrum - 2021/12/01 14:59:19 mounted blob: sha256:7b1a6ab2e44dbac178598dabe7cff59bd67233dba0b27e4fbd1f9d4b3c877a54"}
+{"level":"info","ts":1638370759.7680354,"logger":"camel-k","msg":"spectrum - 2021/12/01 14:59:19 pushed blob: sha256:7ab3ef14acfc3ffc63e202cd739b1a58bd57cc533ae60911be476d8560f1553d"}
+{"level":"info","ts":1638370760.6641948,"logger":"camel-k","msg":"spectrum - 2021/12/01 14:59:20 pushed blob: sha256:332137d920ef2f883795c2376c1137377e53f15f0fe7c069eb3185c2579962de"}
+{"level":"info","ts":1638370761.0107977,"logger":"camel-k","msg":"spectrum - 2021/12/01 14:59:21 chubbio.azurecr.io/chubbio/camel-k-kit-c6jop2fjm5vpcoh6ea0g:21311584: digest: sha256:19bdaeb68a620784bd0a961ab2133630032cd7ad8dac4a3b9f27ac13683f9ac7 size: 1086"}
+{"level":"info","ts":1638370761.0343585,"logger":"camel-k.controller.integrationkit","msg":"Reconciling IntegrationKit","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370761.0345204,"logger":"camel-k.controller.integrationkit","msg":"Invoking action build","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"IntegrationKit","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370761.0346746,"logger":"camel-k.controller.build","msg":"Reconciling Build","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370761.0383463,"logger":"camel-k.controller.build","msg":"state transition","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"Build","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g","phase-from":"Running","phase-to":"Succeeded"}
+{"level":"info","ts":1638370761.0528395,"logger":"camel-k.controller.integrationkit","msg":"state transition","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"IntegrationKit","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g","phase-from":"Build Running","phase-to":"Ready"}
+{"level":"info","ts":1638370761.053261,"logger":"camel-k.controller.integrationkit","msg":"Reconciling IntegrationKit","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370761.053304,"logger":"camel-k.controller.integrationkit","msg":"Invoking action monitor","request-namespace":"camelk","request-name":"kit-c6jop2fjm5vpcoh6ea0g","api-version":"camel.apache.org/v1","kind":"IntegrationKit","ns":"camelk","name":"kit-c6jop2fjm5vpcoh6ea0g"}
+{"level":"info","ts":1638370761.0536435,"logger":"camel-k","msg":"Kit kit-c6jop2fjm5vpcoh6ea0g ready, notify integration: sample"}
+{"level":"info","ts":1638370761.0538037,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370761.0539405,"logger":"camel-k.controller.integration","msg":"Invoking action build-kit","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370761.0657446,"logger":"camel-k.controller.integration","msg":"state transition","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample","phase-from":"Building Kit","phase-to":"Deploying"}
+{"level":"info","ts":1638370761.0658293,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370761.0658646,"logger":"camel-k.controller.integration","msg":"Invoking action monitor","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370761.0667906,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370761.069576,"logger":"camel-k.trait","msg":"Apply trait: environment"}
+{"level":"info","ts":1638370761.069595,"logger":"camel-k.trait","msg":"Apply trait: logging"}
+{"level":"info","ts":1638370761.0698967,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370761.071268,"logger":"camel-k.trait","msg":"Apply trait: deployment"}
+{"level":"info","ts":1638370761.0712907,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370761.0716233,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370761.0768578,"logger":"camel-k.trait","msg":"Apply trait: pull-secret"}
+{"level":"info","ts":1638370761.076896,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370761.0769048,"logger":"camel-k.trait","msg":"Apply trait: jvm"}
+{"level":"info","ts":1638370761.0769968,"logger":"camel-k.trait","msg":"Apply trait: owner"}
+{"level":"info","ts":1638370761.1423244,"logger":"camel-k.controller.integration","msg":"state transition","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample","phase-from":"Deploying","phase-to":"Running"}
+{"level":"info","ts":1638370761.1424384,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370761.142501,"logger":"camel-k.controller.integration","msg":"Invoking action monitor","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370761.142752,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370761.1443992,"logger":"camel-k.trait","msg":"Apply trait: environment"}
+{"level":"info","ts":1638370761.1444185,"logger":"camel-k.trait","msg":"Apply trait: logging"}
+{"level":"info","ts":1638370761.14474,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370761.145991,"logger":"camel-k.trait","msg":"Apply trait: deployment"}
+{"level":"info","ts":1638370761.1460133,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370761.1463218,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370761.151308,"logger":"camel-k.trait","msg":"Apply trait: pull-secret"}
+{"level":"info","ts":1638370761.1513233,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370761.1513312,"logger":"camel-k.trait","msg":"Apply trait: jvm"}
+{"level":"info","ts":1638370761.1514397,"logger":"camel-k.trait","msg":"Apply trait: owner"}
+{"level":"info","ts":1638370761.2327564,"logger":"camel-k.controller.integration","msg":"state transition","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample","phase-from":"Deploying","phase-to":"Running"}
+{"level":"info","ts":1638370761.2328937,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370761.2329311,"logger":"camel-k.controller.integration","msg":"Invoking action monitor","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370761.233177,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370761.2471304,"logger":"camel-k.trait","msg":"Apply trait: environment"}
+{"level":"info","ts":1638370761.2471807,"logger":"camel-k.trait","msg":"Apply trait: logging"}
+{"level":"info","ts":1638370761.2481894,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370761.2533786,"logger":"camel-k.trait","msg":"Apply trait: deployment"}
+{"level":"info","ts":1638370761.2558515,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370761.2564626,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370761.263309,"logger":"camel-k.trait","msg":"Apply trait: pull-secret"}
+{"level":"info","ts":1638370761.2634618,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370761.2635531,"logger":"camel-k.trait","msg":"Apply trait: jvm"}
+{"level":"info","ts":1638370761.2641275,"logger":"camel-k.trait","msg":"Apply trait: owner"}
+{"level":"info","ts":1638370761.3558583,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370761.35611,"logger":"camel-k.controller.integration","msg":"Invoking action monitor","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370761.3565552,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370761.3587549,"logger":"camel-k.trait","msg":"Apply trait: environment"}
+{"level":"info","ts":1638370761.358885,"logger":"camel-k.trait","msg":"Apply trait: logging"}
+{"level":"info","ts":1638370761.3596404,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370761.3613775,"logger":"camel-k.trait","msg":"Apply trait: deployment"}
+{"level":"info","ts":1638370761.3615053,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370761.3618336,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370761.3730717,"logger":"camel-k.trait","msg":"Apply trait: pull-secret"}
+{"level":"info","ts":1638370761.373093,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370761.3731015,"logger":"camel-k.trait","msg":"Apply trait: jvm"}
+{"level":"info","ts":1638370761.3731816,"logger":"camel-k.trait","msg":"Apply trait: owner"}
+{"level":"info","ts":1638370762.2446318,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370762.244879,"logger":"camel-k.controller.integration","msg":"Invoking action monitor","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370762.2454774,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370762.246961,"logger":"camel-k.trait","msg":"Apply trait: environment"}
+{"level":"info","ts":1638370762.247003,"logger":"camel-k.trait","msg":"Apply trait: logging"}
+{"level":"info","ts":1638370762.2472327,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370762.2481153,"logger":"camel-k.trait","msg":"Apply trait: deployment"}
+{"level":"info","ts":1638370762.248178,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370762.2484605,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370762.2509863,"logger":"camel-k.trait","msg":"Apply trait: pull-secret"}
+{"level":"info","ts":1638370762.25101,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370762.2510192,"logger":"camel-k.trait","msg":"Apply trait: jvm"}
+{"level":"info","ts":1638370762.2510934,"logger":"camel-k.trait","msg":"Apply trait: owner"}
+{"level":"info","ts":1638370775.3490415,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370775.3495448,"logger":"camel-k.controller.integration","msg":"Invoking action monitor","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370775.3505182,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370775.3520179,"logger":"camel-k.trait","msg":"Apply trait: environment"}
+{"level":"info","ts":1638370775.352044,"logger":"camel-k.trait","msg":"Apply trait: logging"}
+{"level":"info","ts":1638370775.3522398,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370775.3531253,"logger":"camel-k.trait","msg":"Apply trait: deployment"}
+{"level":"info","ts":1638370775.3531651,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370775.3533828,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370775.3593845,"logger":"camel-k.trait","msg":"Apply trait: pull-secret"}
+{"level":"info","ts":1638370775.359496,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370775.360084,"logger":"camel-k.trait","msg":"Apply trait: jvm"}
+{"level":"info","ts":1638370775.3602788,"logger":"camel-k.trait","msg":"Apply trait: owner"}
+{"level":"info","ts":1638370775.3996413,"logger":"camel-k.controller.integration","msg":"First readiness after 5m34s","request-namespace":"camelk","request-name":"sample","api-version":"","kind":"","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370775.4027007,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370775.4034426,"logger":"camel-k.controller.integration","msg":"Invoking action monitor","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370775.4037647,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370775.409315,"logger":"camel-k.trait","msg":"Apply trait: environment"}
+{"level":"info","ts":1638370775.4094634,"logger":"camel-k.trait","msg":"Apply trait: logging"}
+{"level":"info","ts":1638370775.4134862,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370775.4166021,"logger":"camel-k.trait","msg":"Apply trait: deployment"}
+{"level":"info","ts":1638370775.416739,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370775.4205987,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370775.4248912,"logger":"camel-k.trait","msg":"Apply trait: pull-secret"}
+{"level":"info","ts":1638370775.4269748,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370775.4293203,"logger":"camel-k.trait","msg":"Apply trait: jvm"}
+{"level":"info","ts":1638370775.43147,"logger":"camel-k.trait","msg":"Apply trait: owner"}
+{"level":"info","ts":1638370782.1756153,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370782.1756847,"logger":"camel-k.controller.integration","msg":"Invoking action monitor","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370782.1759706,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370782.1777415,"logger":"camel-k.trait","msg":"Apply trait: environment"}
+{"level":"info","ts":1638370782.1777616,"logger":"camel-k.trait","msg":"Apply trait: logging"}
+{"level":"info","ts":1638370782.178073,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370782.1789715,"logger":"camel-k.trait","msg":"Apply trait: deployment"}
+{"level":"info","ts":1638370782.1790032,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370782.1793337,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370782.1975458,"logger":"camel-k.trait","msg":"Apply trait: pull-secret"}
+{"level":"info","ts":1638370782.1975775,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370782.197589,"logger":"camel-k.trait","msg":"Apply trait: jvm"}
+{"level":"info","ts":1638370782.1976898,"logger":"camel-k.trait","msg":"Apply trait: owner"}
+{"level":"info","ts":1638370782.3023472,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370782.3024976,"logger":"camel-k.controller.integration","msg":"Invoking action monitor","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370782.303025,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370782.3047798,"logger":"camel-k.trait","msg":"Apply trait: environment"}
+{"level":"info","ts":1638370782.3047962,"logger":"camel-k.trait","msg":"Apply trait: logging"}
+{"level":"info","ts":1638370782.3050506,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370782.3062124,"logger":"camel-k.trait","msg":"Apply trait: deployment"}
+{"level":"info","ts":1638370782.306259,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370782.3074136,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370782.3099937,"logger":"camel-k.trait","msg":"Apply trait: pull-secret"}
+{"level":"info","ts":1638370782.3100917,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370782.310165,"logger":"camel-k.trait","msg":"Apply trait: jvm"}
+{"level":"info","ts":1638370782.3103137,"logger":"camel-k.trait","msg":"Apply trait: owner"}
+{"level":"info","ts":1638370782.422052,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370782.4223156,"logger":"camel-k.controller.integration","msg":"Invoking action monitor","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370782.4227736,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370782.424732,"logger":"camel-k.trait","msg":"Apply trait: environment"}
+{"level":"info","ts":1638370782.424805,"logger":"camel-k.trait","msg":"Apply trait: logging"}
+{"level":"info","ts":1638370782.4250674,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370782.4259667,"logger":"camel-k.trait","msg":"Apply trait: deployment"}
+{"level":"info","ts":1638370782.4260516,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370782.426675,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370782.4293945,"logger":"camel-k.trait","msg":"Apply trait: pull-secret"}
+{"level":"info","ts":1638370782.4294534,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370782.4294813,"logger":"camel-k.trait","msg":"Apply trait: jvm"}
+{"level":"info","ts":1638370782.429593,"logger":"camel-k.trait","msg":"Apply trait: owner"}
+{"level":"info","ts":1638370783.3009462,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370783.3010042,"logger":"camel-k.controller.integration","msg":"Invoking action monitor","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370783.3013036,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370783.3037405,"logger":"camel-k.trait","msg":"Apply trait: environment"}
+{"level":"info","ts":1638370783.3037717,"logger":"camel-k.trait","msg":"Apply trait: logging"}
+{"level":"info","ts":1638370783.3039823,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370783.3048177,"logger":"camel-k.trait","msg":"Apply trait: deployment"}
+{"level":"info","ts":1638370783.3048553,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370783.3050954,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370783.3159566,"logger":"camel-k.trait","msg":"Apply trait: pull-secret"}
+{"level":"info","ts":1638370783.3159816,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370783.316003,"logger":"camel-k.trait","msg":"Apply trait: jvm"}
+{"level":"info","ts":1638370783.3160765,"logger":"camel-k.trait","msg":"Apply trait: owner"}
+{"level":"info","ts":1638370791.3251855,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370791.325307,"logger":"camel-k.controller.integration","msg":"Invoking action monitor","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370791.326013,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370791.3277745,"logger":"camel-k.trait","msg":"Apply trait: environment"}
+{"level":"info","ts":1638370791.327792,"logger":"camel-k.trait","msg":"Apply trait: logging"}
+{"level":"info","ts":1638370791.3283184,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370791.330692,"logger":"camel-k.trait","msg":"Apply trait: deployment"}
+{"level":"info","ts":1638370791.3310592,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370791.3315744,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370791.343445,"logger":"camel-k.trait","msg":"Apply trait: pull-secret"}
+{"level":"info","ts":1638370791.3434668,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370791.343477,"logger":"camel-k.trait","msg":"Apply trait: jvm"}
+{"level":"info","ts":1638370791.343584,"logger":"camel-k.trait","msg":"Apply trait: owner"}
+{"level":"info","ts":1638370791.383929,"logger":"camel-k.controller.integration","msg":"Reconciling Integration","request-namespace":"camelk","request-name":"sample"}
+{"level":"info","ts":1638370791.3840084,"logger":"camel-k.controller.integration","msg":"Invoking action monitor","request-namespace":"camelk","request-name":"sample","api-version":"camel.apache.org/v1","kind":"Integration","ns":"camelk","name":"sample"}
+{"level":"info","ts":1638370791.3846667,"logger":"camel-k.trait","msg":"Apply trait: camel"}
+{"level":"info","ts":1638370791.3864367,"logger":"camel-k.trait","msg":"Apply trait: environment"}
+{"level":"info","ts":1638370791.3864527,"logger":"camel-k.trait","msg":"Apply trait: logging"}
+{"level":"info","ts":1638370791.3866832,"logger":"camel-k.trait","msg":"Apply trait: deployer"}
+{"level":"info","ts":1638370791.3885527,"logger":"camel-k.trait","msg":"Apply trait: deployment"}
+{"level":"info","ts":1638370791.3896573,"logger":"camel-k.trait","msg":"Apply trait: gc"}
+{"level":"info","ts":1638370791.3899453,"logger":"camel-k.trait","msg":"Apply trait: container"}
+{"level":"info","ts":1638370791.39292,"logger":"camel-k.trait","msg":"Apply trait: pull-secret"}
+{"level":"info","ts":1638370791.3929355,"logger":"camel-k.trait","msg":"Apply trait: quarkus"}
+{"level":"info","ts":1638370791.394086,"logger":"camel-k.trait","msg":"Apply trait: jvm"}
+{"level":"info","ts":1638370791.3941817,"logger":"camel-k.trait","msg":"Apply trait: owner"}

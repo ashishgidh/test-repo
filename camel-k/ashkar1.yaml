@@ -1,0 +1,12 @@
+- route:
+    from:
+      uri: timer:yaml
+      steps:
+        - setBody:
+            expression:
+              constant:
+                expression: Hello Camel K from yaml
+        - to:
+            uri: log:info
+      parameters:
+        period: '1000'

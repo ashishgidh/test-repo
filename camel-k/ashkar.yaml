@@ -1,0 +1,24 @@
+- route:
+    from:
+      uri: timer:yaml
+      steps:
+        - setBody:
+            expression:
+              constant:
+                expression: Hello Camel K from yaml ashish1
+        - to:
+            uri: log:info
+        - to:
+            uri: atlasmap
+        - to:
+            uri: activemq
+      parameters:
+        period: '1000'
+- route:
+    from:
+      uri: kafka
+- rest:
+    put:
+      - {}
+    post:
+      - {}

@@ -1,0 +1,13 @@
+apiVersion: camel.apache.org/v1
+kind: Integration
+metadata:
+  name: test.yaml
+spec:
+  flows:
+    - route:
+        from:
+          uri: timer
+          steps:
+            - to:
+                uri: log:test
+                description: test

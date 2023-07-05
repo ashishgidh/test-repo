@@ -1,0 +1,25 @@
+apiVersion: camel.apache.org/v1
+kind: Integration
+metadata:
+  name: hello-world-rest.yaml
+spec:
+  flows:
+    - rest:
+        get:
+          - path: helloworld
+            to: direct:hello-world
+    - route:
+        from:
+          uri: direct:hello-world
+          steps:
+            - log:
+                message: hello from rest-sample
+                loggingLevel: INFO
+            - setBody:
+                expression:
+                  simple:
+                    expression: hello from rest sample
+            - marshal:
+                json:
+                  library: jackson
+        id: Hello World

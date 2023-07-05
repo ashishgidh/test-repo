@@ -1,0 +1,7 @@
+- route:
+    from:
+      uri: direct:test2
+      steps:
+        - log:
+            message: TESTING from  Different Route Gidh
+            loggingLevel: INFO

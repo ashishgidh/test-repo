@@ -1,0 +1,36 @@
+apiVersion: camel.apache.org/v1
+kind: Integration
+metadata:
+  name: hello-world-rest.yaml
+spec:
+  flows:
+    - rest:
+        id: rest-a6f5
+        get:
+          - id: get-a7bd
+            path: helloworld
+            to: direct:hello-world
+    - route:
+        id: Hello World
+        from:
+          uri: direct:hello-world
+          id: from-456a
+          steps:
+            - log:
+                message: hello from rest-sample
+                id: log-1951
+                loggingLevel: INFO
+            - to:
+                uri: bean:appService
+                id: to-d90c
+                parameters:
+                  method: setBody
+            - marshal:
+                id: marshal-2677
+                json:
+                  id: json-4c0c
+                  library: jackson
+    - beans:
+        - name: appService
+          type: com.chubb.bootstrap.demo1.AppService
+

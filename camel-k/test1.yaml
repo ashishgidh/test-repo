@@ -1,0 +1,32 @@
+- route:
+    from:
+      uri: timer:renewal-demo
+      steps:
+        - setHeader:
+            name: id
+            expression:
+              constant:
+                expression: '1'
+        - log:
+            message: >-
+              Ashish fetching details for id: ${header.id} with headers:
+              ${headers}
+            loggingLevel: INFO
+        - setProperty:
+            name: ashid
+            expression:
+              constant:
+                expression: Property Ashish Id
+        - log:
+            message: >-
+              Ashish fetching details Properties: ${exchange.properties}
+            loggingLevel: INFO
+        - toD:
+            uri: direct:test2
+            description: test 2
+      parameters:
+        repeatCount: 1
+        delay: '5000'
+        period: '2000'
+    id: Renewal Processing Example
+    description: Fetches single record based on the query

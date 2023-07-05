@@ -1,0 +1,20 @@
+#commons-START#
+quarkus:
+  mongodb:
+    connection-string: mongodb://nae2sacosd0027:s2HRgzOXU7R4W5JbzYitRnvSJsqWXd56DtbmkuDmRYggOJCaXH7PHuKg8BLOMjJJzqhRZvR0IVXbLPnT3GyX3Q==@nae2sacosd0027.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@nae2sacosd0027@
+  http:
+    root-path: /chubbio-bootstrap-demo1
+  jackson:
+    fail-on-unknown-properties: false
+  #  native:
+  #    container-build: true
+  #    container-runtime: docker
+
+        
+camel:
+  main:
+    # for Cold deployments (also dvops to aks/cks) use the following
+    #routes-include-pattern: "classpath:routes/*"
+    # for hot local development use the following
+    routes-include-pattern: "classpath:routes/hello-world-rest.yaml"
+#commons-END#

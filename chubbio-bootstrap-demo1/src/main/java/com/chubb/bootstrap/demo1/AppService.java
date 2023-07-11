@@ -6,7 +6,7 @@ public class AppService {
 
     public void setBody(Exchange exchange)  {
         try {
-            exchange.getIn().setBody("hello ashish Gidh Ash");
+            exchange.getIn().setBody("hello alagu");
      
         }catch (Exception e){
             e.printStackTrace();

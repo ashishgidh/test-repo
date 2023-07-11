@@ -1,7 +1,10 @@
-# camel-k: language=yaml
+apiVersion: camel.apache.org/v1
+kind: Integration
+metadata:
+  name: hello-world-rest.yaml
+spec:
 
-# Write your routes here, for example:
-
+  flows:
     - rest:
         id: rest-a6f5
         get:

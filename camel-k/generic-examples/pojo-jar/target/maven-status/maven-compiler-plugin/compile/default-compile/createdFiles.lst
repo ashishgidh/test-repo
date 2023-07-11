@@ -1,0 +1,3 @@
+org\apache\camel\OpenApiRoute.class
+org\apache\camel\User.class
+org\apache\camel\UserService.class

@@ -1,0 +1,26 @@
+{
+  "applications": "*",
+  "changelogDate": "20230814202125",
+  "entityTableName": "cluster_country",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "ClusterCountry",
+  "relationships": [
+    {
+      "otherEntityName": "country",
+      "otherEntityRelationshipName": "clusterCountry",
+      "relationshipName": "country",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

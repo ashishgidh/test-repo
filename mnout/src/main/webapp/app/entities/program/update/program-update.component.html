@@ -1,0 +1,92 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-program-heading" data-cy="ProgramCreateUpdateHeading" jhiTranslate="mnoutApp.program.home.createOrEditLabel">
+        Create or edit a Program
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="mb-3" *ngIf="editForm.controls.id.value !== null">
+          <label class="form-label" jhiTranslate="global.field.id" for="field_id">ID</label>
+          <input type="text" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.program.programId" for="field_programId">Program Id</label>
+          <input type="number" class="form-control" name="programId" id="field_programId" data-cy="programId" formControlName="programId" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.program.clusterId" for="field_clusterId">Cluster Id</label>
+          <input type="number" class="form-control" name="clusterId" id="field_clusterId" data-cy="clusterId" formControlName="clusterId" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.program.countryId" for="field_countryId">Country Id</label>
+          <input type="number" class="form-control" name="countryId" id="field_countryId" data-cy="countryId" formControlName="countryId" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.program.branchId" for="field_branchId">Branch Id</label>
+          <input type="number" class="form-control" name="branchId" id="field_branchId" data-cy="branchId" formControlName="branchId" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.program.maxLOBId" for="field_maxLOBId">Max LOB Id</label>
+          <input type="number" class="form-control" name="maxLOBId" id="field_maxLOBId" data-cy="maxLOBId" formControlName="maxLOBId" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.program.wvLOBId" for="field_wvLOBId">Wv LOB Id</label>
+          <input type="number" class="form-control" name="wvLOBId" id="field_wvLOBId" data-cy="wvLOBId" formControlName="wvLOBId" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.program.programEffectiveDate" for="field_programEffectiveDate"
+            >Program Effective Date</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="programEffectiveDate"
+            id="field_programEffectiveDate"
+            data-cy="programEffectiveDate"
+            formControlName="programEffectiveDate"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.program.programExpiryDate" for="field_programExpiryDate"
+            >Program Expiry Date</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="programExpiryDate"
+            id="field_programExpiryDate"
+            data-cy="programExpiryDate"
+            formControlName="programExpiryDate"
+          />
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

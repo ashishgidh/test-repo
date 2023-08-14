@@ -1,0 +1,18 @@
+{
+  "applications": "*",
+  "changelogDate": "20230814202124",
+  "entityTableName": "cluster",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Cluster",
+  "relationships": [],
+  "searchEngine": "no"
+}

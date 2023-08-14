@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20230814202121",
+  "embedded": true,
+  "entityTableName": "address",
+  "fields": [
+    {
+      "fieldName": "addressId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "street1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "street2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postalCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "county",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Address",
+  "relationships": [
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "address",
+      "relationshipName": "client",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

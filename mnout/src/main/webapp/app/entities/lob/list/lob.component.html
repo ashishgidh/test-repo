@@ -1,0 +1,99 @@
+<div>
+  <h2 id="page-heading" data-cy="LOBHeading">
+    <span jhiTranslate="mnoutApp.lOB.home.title">LOBS</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="mnoutApp.lOB.home.refreshListLabel">Refresh list</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-lob"
+        [routerLink]="['/lob/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="mnoutApp.lOB.home.createLabel"> Create a new LOB </span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="lOBS?.length === 0">
+    <span jhiTranslate="mnoutApp.lOB.home.notFound">No LOBS found</span>
+  </div>
+
+  <div class="table-responsive table-entities" id="entities" *ngIf="lOBS && lOBS.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" (sortChange)="navigateToWithComponentValues()">
+          <th scope="col" jhiSortBy="id">
+            <div class="d-flex">
+              <span jhiTranslate="mnoutApp.lOB.id">Id</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="wvLobCode">
+            <div class="d-flex">
+              <span jhiTranslate="mnoutApp.lOB.wvLobCode">Wv Lob Code</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="wvLobName">
+            <div class="d-flex">
+              <span jhiTranslate="mnoutApp.lOB.wvLobName">Wv Lob Name</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="maxLobCode">
+            <div class="d-flex">
+              <span jhiTranslate="mnoutApp.lOB.maxLobCode">Max Lob Code</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="maxLobName">
+            <div class="d-flex">
+              <span jhiTranslate="mnoutApp.lOB.maxLobName">Max Lob Name</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let lOB of lOBS; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/lob', lOB.id, 'view']">{{ lOB.id }}</a>
+          </td>
+          <td>{{ lOB.wvLobCode }}</td>
+          <td>{{ lOB.wvLobName }}</td>
+          <td>{{ lOB.maxLobCode }}</td>
+          <td>{{ lOB.maxLobName }}</td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button type="submit" [routerLink]="['/lob', lOB.id, 'view']" class="btn btn-info btn-sm" data-cy="entityDetailsButton">
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+              </button>
+
+              <button type="submit" [routerLink]="['/lob', lOB.id, 'edit']" class="btn btn-primary btn-sm" data-cy="entityEditButton">
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+              </button>
+
+              <button type="submit" (click)="delete(lOB)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

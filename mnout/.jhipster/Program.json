@@ -1,0 +1,50 @@
+{
+  "applications": "*",
+  "changelogDate": "20230814202130",
+  "entityTableName": "program",
+  "fields": [
+    {
+      "fieldName": "programId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "clusterId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "countryId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "branchId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "maxLOBId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "wvLOBId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "programEffectiveDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "programExpiryDate",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Program",
+  "relationships": [
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "program",
+      "relationshipName": "client",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

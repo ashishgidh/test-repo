@@ -1,0 +1,62 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2
+        id="jhi-portfolio-segment-heading"
+        data-cy="PortfolioSegmentCreateUpdateHeading"
+        jhiTranslate="mnoutApp.portfolioSegment.home.createOrEditLabel"
+      >
+        Create or edit a Portfolio Segment
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="mb-3" *ngIf="editForm.controls.id.value !== null">
+          <label class="form-label" jhiTranslate="global.field.id" for="field_id">ID</label>
+          <input type="text" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.portfolioSegment.portfolioSigment" for="field_portfolioSigment"
+            >Portfolio Sigment</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            name="portfolioSigment"
+            id="field_portfolioSigment"
+            data-cy="portfolioSigment"
+            formControlName="portfolioSigment"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.portfolioSegment.name" for="field_name">Name</label>
+          <input type="text" class="form-control" name="name" id="field_name" data-cy="name" formControlName="name" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.portfolioSegment.segment" for="field_segment">Segment</label>
+          <input type="text" class="form-control" name="segment" id="field_segment" data-cy="segment" formControlName="segment" />
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

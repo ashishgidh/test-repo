@@ -1,0 +1,22 @@
+{
+  "applications": "*",
+  "changelogDate": "20230814202129",
+  "entityTableName": "portfolio_segment",
+  "fields": [
+    {
+      "fieldName": "portfolioSigment",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "segment",
+      "fieldType": "String"
+    }
+  ],
+  "name": "PortfolioSegment",
+  "relationships": [],
+  "searchEngine": "no"
+}

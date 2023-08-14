@@ -1,0 +1,30 @@
+{
+  "applications": "*",
+  "changelogDate": "20230814202128",
+  "entityTableName": "lob",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "wvLobCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "wvLobName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "maxLobCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "maxLobName",
+      "fieldType": "String"
+    }
+  ],
+  "name": "LOB",
+  "relationships": [],
+  "searchEngine": "no"
+}

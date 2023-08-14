@@ -1,0 +1,18 @@
+{
+  "applications": "*",
+  "changelogDate": "20230814202122",
+  "entityTableName": "branch",
+  "fields": [
+    {
+      "fieldName": "branchId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Branch",
+  "relationships": [],
+  "searchEngine": "no"
+}

@@ -1,0 +1,60 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="program">
+      <h2 data-cy="programDetailsHeading"><span jhiTranslate="mnoutApp.program.detail.title">Program</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ program.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="mnoutApp.program.programId">Program Id</span></dt>
+        <dd>
+          <span>{{ program.programId }}</span>
+        </dd>
+        <dt><span jhiTranslate="mnoutApp.program.clusterId">Cluster Id</span></dt>
+        <dd>
+          <span>{{ program.clusterId }}</span>
+        </dd>
+        <dt><span jhiTranslate="mnoutApp.program.countryId">Country Id</span></dt>
+        <dd>
+          <span>{{ program.countryId }}</span>
+        </dd>
+        <dt><span jhiTranslate="mnoutApp.program.branchId">Branch Id</span></dt>
+        <dd>
+          <span>{{ program.branchId }}</span>
+        </dd>
+        <dt><span jhiTranslate="mnoutApp.program.maxLOBId">Max LOB Id</span></dt>
+        <dd>
+          <span>{{ program.maxLOBId }}</span>
+        </dd>
+        <dt><span jhiTranslate="mnoutApp.program.wvLOBId">Wv LOB Id</span></dt>
+        <dd>
+          <span>{{ program.wvLOBId }}</span>
+        </dd>
+        <dt><span jhiTranslate="mnoutApp.program.programEffectiveDate">Program Effective Date</span></dt>
+        <dd>
+          <span>{{ program.programEffectiveDate }}</span>
+        </dd>
+        <dt><span jhiTranslate="mnoutApp.program.programExpiryDate">Program Expiry Date</span></dt>
+        <dd>
+          <span>{{ program.programExpiryDate }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/program', program.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

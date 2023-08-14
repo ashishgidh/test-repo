@@ -1,0 +1,66 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-lob-heading" data-cy="LOBCreateUpdateHeading" jhiTranslate="mnoutApp.lOB.home.createOrEditLabel">Create or edit a LOB</h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="mb-3" *ngIf="editForm.controls.id.value !== null">
+          <label class="form-label" jhiTranslate="mnoutApp.lOB.id" for="field_id">Id</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.lOB.wvLobCode" for="field_wvLobCode">Wv Lob Code</label>
+          <input type="text" class="form-control" name="wvLobCode" id="field_wvLobCode" data-cy="wvLobCode" formControlName="wvLobCode" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.lOB.wvLobName" for="field_wvLobName">Wv Lob Name</label>
+          <input type="text" class="form-control" name="wvLobName" id="field_wvLobName" data-cy="wvLobName" formControlName="wvLobName" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.lOB.maxLobCode" for="field_maxLobCode">Max Lob Code</label>
+          <input
+            type="text"
+            class="form-control"
+            name="maxLobCode"
+            id="field_maxLobCode"
+            data-cy="maxLobCode"
+            formControlName="maxLobCode"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="mnoutApp.lOB.maxLobName" for="field_maxLobName">Max Lob Name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="maxLobName"
+            id="field_maxLobName"
+            data-cy="maxLobName"
+            formControlName="maxLobName"
+          />
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

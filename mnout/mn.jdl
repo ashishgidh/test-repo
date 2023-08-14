@@ -1,0 +1,88 @@
+entity Client {
+    clientId Long,
+    name String,
+    email String,
+    phone String,
+    company String
+}
+
+@embedded
+entity Address {
+    addressId Long,
+    street1 String,
+    street2 String,
+    city String,
+    country String,
+    postalCode String,
+    county String
+}
+
+entity Program {
+    programId Long,
+    clusterId Long,
+    countryId Long,
+    branchId Long,
+    maxLOBId Long,
+    wvLOBId Long,
+    programEffectiveDate String,
+    programExpiryDate String
+}
+
+entity Branch {
+    branchId Long,
+    name String
+}
+
+entity Cluster {
+    id Long,
+    name String
+}
+
+entity ClusterCountry {
+    Id Long,
+    name String,
+}
+
+
+
+@embedded
+entity Country {
+    id Long,
+    name String,
+    code String
+}
+
+entity CSEUser {
+    id Long,
+    name String,
+    email String,
+    phone String
+}
+
+entity LOB {
+    id Long,
+    wvLobCode String,
+    wvLobName String,
+    maxLobCode String,
+    maxLobName String
+}
+
+entity PortfolioSegment {
+    portfolioSigment Long,
+    name String,
+    segment String
+}
+
+relationship OneToMany {
+  Program to Client
+}
+
+relationship OneToMany {
+   Client to Address 
+   }
+ 
+relationship OneToMany {
+  ClusterCountry to Country
+}
+
+

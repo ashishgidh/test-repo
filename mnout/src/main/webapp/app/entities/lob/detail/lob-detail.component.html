@@ -1,0 +1,44 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="lOB">
+      <h2 data-cy="lOBDetailsHeading"><span jhiTranslate="mnoutApp.lOB.detail.title">LOB</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="mnoutApp.lOB.id">Id</span></dt>
+        <dd>
+          <span>{{ lOB.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="mnoutApp.lOB.wvLobCode">Wv Lob Code</span></dt>
+        <dd>
+          <span>{{ lOB.wvLobCode }}</span>
+        </dd>
+        <dt><span jhiTranslate="mnoutApp.lOB.wvLobName">Wv Lob Name</span></dt>
+        <dd>
+          <span>{{ lOB.wvLobName }}</span>
+        </dd>
+        <dt><span jhiTranslate="mnoutApp.lOB.maxLobCode">Max Lob Code</span></dt>
+        <dd>
+          <span>{{ lOB.maxLobCode }}</span>
+        </dd>
+        <dt><span jhiTranslate="mnoutApp.lOB.maxLobName">Max Lob Name</span></dt>
+        <dd>
+          <span>{{ lOB.maxLobName }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/lob', lOB.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>
